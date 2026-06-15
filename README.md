@@ -14,7 +14,7 @@ The struct has the properties
 
 1. `new()` to create the struct 
 2. `update()` to update the data
-3. `get_cpu_info()` which returns `[&str;3]` that contains the model then the amount of threads and then the amount of cores
+3. `get_cpu_info()` which returns `[&str;3]` that contains the model then the amount of cores and then the amount of threads
 4. `get_cpu_usage()` which returns `Option<(u8, u64)>` where it returns the usage% and flat usage
 
 Note that `get_cpu_usage()` will return `None` if `update()` has not been run even once.
